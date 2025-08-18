@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.marker {
+  position: absolute;
+  background: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.marker:hover::after {
+  content: attr(data-name);
+  position: absolute;
+  left: 20px;
+  background: black;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+.map-container {
+  position: relative;
+}
+</style>
+</head>
+<body>
+
+<div class="map-container">
+  
+  <img src="tn.jpg" width="600">
+
+  
+  <div class="marker" data-name="chennai" style="top: 200px; left: 390px;"></div>
+  <div class="marker" data-name="thoothukudi" style="top: 500px; left: 260px;"></div>
+  <div class="marker" data-name="chennai" style="top: 200px; left: 390px;"></div>
+</div>
+
+</body>
+</html>
